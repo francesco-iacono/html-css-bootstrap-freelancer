@@ -1,0 +1,33 @@
+.debug [class*='col-'] {
+  height: 100px;
+  border: 1px solid black;
+}
+body {
+  text-align: center;
+}
+
+#header-top {
+  background-color: #2c3d51;
+  color: white;
+}
+#jumbotron {
+  background-color: #19bd9b;
+}
+#portfolio{
+  background-color: white;
+}
+#about {
+  background-color: #19bd9b;
+}
+#footer-top {
+  background-color: #364B60;
+}
+#footer-bottom {
+  background-color: #2c3c53;
+}
+
+@media screen (min-width: 768px) {
+  #portfolio {
+    background-color: red;
+  }
+}
