@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
@@ -8,110 +9,150 @@
     <!-- /Latest compiled and minified CSS -->
     <!-- nostro foglio di stile -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
     <title>Bootstrap 3</title>
   </head>
   <body class="debug">
     <!-- header -->
     <header>
       <!-- barra di navigazione -->
-      <div  id="header-top">
+      <section  id="header_top" class="text-uppercase">
         <nav class="container">
           <div class="row">
-            <div class="col-xs-10 col-md-8">.col-xs-12 .col-md-8</div>
-            <div class="col-xs-2 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6">
+              <a href="#">Start Bootstrap</a>
+            </div>
+            <div class="col-xs-6 text-right">
+              <a class="list_inline" href="#">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+              </a>
+              <ul class="list_inline">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
-      </div>
-      <!-- barra di navigazione -->
-      <div id="jumbotron">
-        <div class=" container">
-          <div class="row">
-            <div class="col-xs-12">
-              <h1>START BOOTSTRAP</h1>
-              <p>Graphic Artist - Web Designer - Illustrator</p>
+      </section>
+      <!-- /barra di navigazione -->
+      <section id="jumbotron">
+        <div class=" container text-center">
+          <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
+          <h1>Start Bootstrap</h1>
+          <div class="divider_item">
+            <div class="divider_line"> <hr> </div>
+            <div class="divider_star">
+              <i class="fas fa-star"></i>
             </div>
+            <div class="divider_line"> <hr> </div>
           </div>
+          <p>Graphic Artist - Web Designer - Illustrator</p>
         </div>
-      </div>
+      </section>
     </header>
+    <!-- /header -->
+    <!-- main -->
     <main>
       <!-- portfolio -->
-      <div id="portfolio">
-        <div class="container">
-          <h2>Portfolio</h2>
+      <section id="portfolio" class="pad_section">
+        <div class="container text-center">
+          <h2 class=" text_blue">Portfolio</h2>
+
+          <div class="divider_item text_blue">
+            <div class="divider_line line_blue"> <hr> </div>
+            <div class="divider_star">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider_line line_blue"> <hr> </div>
+          </div>
+
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt="">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt="">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt="">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt="">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="portfolio-img"></div>
+              <div class="portfolio_img">
+                <img src="  https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="">
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- /portfolio -->
       <!-- about -->
-      <div id="about">
-        <div class="container">
-          <h2>About</h2>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+      <section id="about" class="pad_section">
+        <div class="wrapper_60">
+          <div class="container-fluid">
+            <h2 class="text-center">About</h2>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6">
-              <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            <div class="row">
+              <button type="button" name="button"></button>
             </div>
-          </div>
-          <div class="row">
-            <button type="button" name="button"></button>
           </div>
         </div>
-      </div>
+      </section>
       <!-- /about -->
       <!-- contact -->
-      <div id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <div class="row">
-            <div class="col-xs-12">
-              <form class="contact-from" action="index.html" method="post">
-                <div class="send-message">
-                  <input type="text" name="" value="" placeholder="Name">
-                </div>
-                <div class="send-message">
-                  <input type="text" name="" value="" placeholder="Email Adress">
-                </div>
-                <div class="send-message">
-                  <input type="text" name="" value="" placeholder="Phone Number">
-                </div>
-                <div class="send-message">
-                  <input type="text" name="" value="" placeholder="Message">
-                </div>
-                <div class="send-message">
-                  <button type="button" name="button">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
+      <section id="contact" class="pad_section">
+        <div class="wrapper_60">
+          <h2 class="text-center text_blue">Contact Me</h2>
+            <form class="contact-from" action="index.html" method="post">
+              <div class="send_message">
+                <input type="text" name="" value="" placeholder="Name">
+              </div>
+              <div class="send_message">
+                <input type="text" name="" value="" placeholder="Email Adress">
+              </div>
+              <div class="send_message">
+                <input type="text" name="" value="" placeholder="Phone Number">
+              </div>
+              <div class="send_message">
+                <input type="text" name="" value="" placeholder="Message">
+              </div>
+              <div class="send_message">
+                <button type="button" name="button">Send</button>
+              </div>
+            </form>
         </div>
-      </div>
+      </section>
       <!-- /contact -->
     </main>
+    <!-- /main -->
+    <!-- footer -->
     <footer>
       <!-- footer-top -->
-      <div id="footer-top">
+      <section id="footer_top" class="text-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4">
@@ -122,16 +163,16 @@
             </div>
             <div class="col-xs-12 col-sm-4">
               <h3>About Freelancer</h3>
-              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap.</a></p>
+              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- /footer-top -->
       <!-- footer-bottom -->
-      <div id="footer-bottom">
+      <section id="footer_bottom" class="text-center">
         <p>Copyright © Your Website 2020</p>
-      </div>
+      </section>
       <!-- /footer-bottom -->
     </footer>
     <!-- /footer -->
