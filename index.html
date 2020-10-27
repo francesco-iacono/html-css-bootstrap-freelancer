@@ -24,10 +24,10 @@
               <a href="#">Start Bootstrap</a>
             </div>
             <div class="col-xs-6 text-right">
-              <a class="list_inline" href="#">
+              <a class="list_inline hidden-md hidden-lg" href="#">
                 <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
               </a>
-              <ul class="list_inline">
+              <ul class="list_inline hidden-sm">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -41,6 +41,7 @@
         <div class=" container text-center">
           <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
           <h1>Start Bootstrap</h1>
+          <!-- icona divisoria  -->
           <div class="divider_item">
             <div class="divider_line"> <hr> </div>
             <div class="divider_star">
@@ -48,6 +49,7 @@
             </div>
             <div class="divider_line"> <hr> </div>
           </div>
+          <!-- /icona divisoria  -->
           <p>Graphic Artist - Web Designer - Illustrator</p>
         </div>
       </section>
@@ -59,7 +61,7 @@
       <section id="portfolio" class="pad_section">
         <div class="container text-center">
           <h2 class=" text_blue">Portfolio</h2>
-
+          <!-- icona divisoria  -->
           <div class="divider_item text_blue">
             <div class="divider_line line_blue"> <hr> </div>
             <div class="divider_star">
@@ -67,7 +69,8 @@
             </div>
             <div class="divider_line line_blue"> <hr> </div>
           </div>
-
+          <!-- /icona divisoria  -->
+        <!-- immagini griglia   -->
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="portfolio_img">
@@ -100,6 +103,7 @@
               </div>
             </div>
           </div>
+          <!-- /immagini griglia   -->
         </div>
       </section>
       <!-- /portfolio -->
@@ -108,6 +112,15 @@
         <div class="wrapper_60">
           <div class="container-fluid">
             <h2 class="text-center">About</h2>
+            <!-- icona divisoria  -->
+            <div class="divider_item text-center">
+              <div class="divider_line"> <hr> </div>
+              <div class="divider_star">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="divider_line"> <hr> </div>
+            </div>
+            <!-- /icona divisoria  -->
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
@@ -116,8 +129,11 @@
                 <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
               </div>
             </div>
-            <div class="row">
-              <button type="button" name="button"></button>
+            <div class="row text-center">
+              <button type="button" class="btn btn-lg btn_green " name="button">
+                <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+                Free Download
+              </button>
             </div>
           </div>
         </div>
@@ -127,21 +143,30 @@
       <section id="contact" class="pad_section">
         <div class="wrapper_60">
           <h2 class="text-center text_blue">Contact Me</h2>
+          <!-- icona divisoria  -->
+          <div class="divider_item text_blue text-center">
+            <div class="divider_line line_blue"> <hr> </div>
+            <div class="divider_star">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider_line line_blue"> <hr> </div>
+          </div>
+          <!-- /icona divisoria  -->
             <form class="contact-from" action="index.html" method="post">
-              <div class="send_message">
+              <div class="send_contact">
                 <input type="text" name="" value="" placeholder="Name">
               </div>
-              <div class="send_message">
+              <div class="send_contact">
                 <input type="text" name="" value="" placeholder="Email Adress">
               </div>
-              <div class="send_message">
+              <div class="send_contact">
                 <input type="text" name="" value="" placeholder="Phone Number">
               </div>
-              <div class="send_message">
-                <input type="text" name="" value="" placeholder="Message">
+              <div class="send_contact message">
+                <input ="" type="text" name="" value="" placeholder="Message">
               </div>
-              <div class="send_message">
-                <button type="button" name="button">Send</button>
+              <div>
+                <button type="button" name="button" class="btn btn-lg btn_green">Send</button>
               </div>
             </form>
         </div>
@@ -152,14 +177,37 @@
     <!-- footer -->
     <footer>
       <!-- footer-top -->
-      <section id="footer_top" class="text-center">
+      <section id="footer_top" class="text-center pad_section">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-4">
               <h3>Location</h3>
+              <p>2215 John Daniel Drive Clark, MO 65243</p>
             </div>
             <div class="col-xs-12 col-sm-4">
               <h3>Around the web</h3>
+              <ul class="list_inline">
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="col-xs-12 col-sm-4">
               <h3>About Freelancer</h3>
