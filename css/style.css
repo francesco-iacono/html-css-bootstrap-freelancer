@@ -2,10 +2,11 @@ body {
   background-color: #fff;
   color: #fff;
   font-size: 1.85rem;
+  font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-family: "Montserrat","Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
@@ -100,13 +101,20 @@ img {
   color: #fff;
   font-weight: bolder;
   font-size: 16px;
+  text-decoration: none;
 }
 #header_top .row div:first-child a:hover {
   text-decoration: none;
+  color:  #fff;
 }
 #header_top .row div a:hover {
   text-decoration: none;
   color: #19bd9b;
+}
+#humburger_icon {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 5px;
 }
 /* /barra di navigazione */
 /* jumbotron */
@@ -125,21 +133,27 @@ img {
 .portfolio_item {
   position: relative;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .plus {
-  width: 100%;
-  line-height: 260px;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   text-align: center;
+  background-color: rgba(26, 188, 156, 0.9);
+  border-radius: 5px 5px;
+  opacity: 0;
+}
+.plus span {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
   font-size: 60px;
   cursor: pointer;
-  background-color: rgba(26, 188, 156, 0.9);
-  border-radius: 5px 5px;
-  opacity: 0;
 }
 .plus:hover {
   opacity: 1;
@@ -167,9 +181,15 @@ img {
   border-right: none;
   border-bottom: 1px solid lightgrey;
 }
-.message input {
-  height: 180px;
-  margin-bottom: 5px;
+.send_contact textarea {
+  width: 100%;
+  height: 160px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 20px;
+  resize: none;
 }
 /* /contact */
 /* /main */
@@ -184,15 +204,22 @@ img {
   padding: 30px 0 25px 0;
 }
 #footer_top .list_inline li {
-  padding: 0;
+  padding: 0 5px;
 }
-#footer_top .list_inline li a {
-  padding: 8px 16px;
+#footer_top .list_inline a {
+  color: white;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   border: 2px solid #ffff;
   border-radius: 50%;
-  color: #ffff;
 }
-#footer_top .list_inline li:hover a {
+#footer_top  i {
+  font-size: 20px;
+}
+#footer_top .list_inline a:hover {
   background-color: white;
   color: #364B60;
 }
